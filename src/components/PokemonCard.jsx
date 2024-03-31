@@ -1,9 +1,11 @@
 import React from 'react'
 
 function PokemonCard() {
-  return (
-    <div>PokemonCard</div>
-  )
+    return (
+        <div>
+            
+        </div>
+    )
 }
 
 export default PokemonCard
