@@ -1,15 +1,16 @@
 import React from 'react'
+import PokemonCard from './PokemonCard'
 
 
 function PokemonList({ pokemon }) {
   return (
-    <div>
+    <>
       {pokemon.map((p) => (
         <div key={p}>
-          {p}
+          <PokemonCard url={p} />
         </div>
       ))}
-    </div>
+    </>
   )
 }
 
