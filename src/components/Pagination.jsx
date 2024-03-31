@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Pagination() {
+function Pagination({ goToNextPage, goToPrevPage }) {
   return (
-    <div>Pagination</div>
+    <div>
+      {goToPrevPage && <button onClick={goToPrevPage}>Previous Page</button>}
+      {goToNextPage && <button onClick={goToNextPage}>Next Page</button>}
+    </div>
   )
 }
 
