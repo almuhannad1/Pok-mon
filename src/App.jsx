@@ -4,6 +4,7 @@ import axios from "axios"
 //components
 import PokemonList from './components/PokemonList.jsx'
 import Pagination from "./components/Pagination.jsx"
+import Header from './components/Header.jsx'
 
 // style 
 import './App.css'
@@ -36,7 +37,7 @@ function App() {
     //   cancel();
     // }
   }, [currentPageUrl])
-  if (loading) return "Loading..";
+  if (loading) return <div class="loader"></div>;
 
   // Next Page and Prev Page 
   function goToNextPage() {
@@ -49,7 +50,7 @@ function App() {
 
   return (
     <div className="app-contaner">
-      <h1>Pokemon Evolution</h1>
+      <Header />
       <div className="pokemon-container">
         <div className="all-container">
           <PokemonList pokemon={pokemon} />

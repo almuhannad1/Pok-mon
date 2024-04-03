@@ -15,7 +15,7 @@ function PokemonCard({ url }) {
             });
     }, [url]);
 
-    if (!info) return <p>Loading...</p>;
+    if (!info) return <div class="loader"></div>;
     return (
         <div className={`${info.types[0].type.name} thumb-container`}>
             <div className="number"><small>#0{info.id}</small></div>
