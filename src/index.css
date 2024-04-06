@@ -84,8 +84,8 @@ h3 {
   background-color: rgba(85, 74, 74, 0.076);
 }
 .thumb-container img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 .thumb-container small {
   text-transform: capitalize;
