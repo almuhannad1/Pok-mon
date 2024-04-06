@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Modal.css";
+import PokemonEvolution from "./PokemonEvolution";
 
 function PokemonDetails({ details }) {
   const [modal, setModal] = useState(false);
-  const [evolution, seEvolution] = useState(null);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -34,9 +34,7 @@ function PokemonDetails({ details }) {
               <div className="left">
                 <img src={details.sprites.front_default} alt={details.name} style={{ width: "25%", height: "40%" }} />
                 <div>
-
-
-
+                    <PokemonEvolution id={details.id}/>
                 </div>
               </div>
 

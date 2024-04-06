@@ -9,7 +9,6 @@ function PokemonCard({ url }) {
         axios.get(url)
             .then((response) => {
                 setInfo(response.data);
-                console.log(response)
             })
             .catch((error) => {
                 console.error('Error fetching Pokemon:', error);
