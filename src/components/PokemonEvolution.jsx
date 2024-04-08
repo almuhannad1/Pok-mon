@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import "./PokemonEvolution.css"
 
 
 function PokemonEvolution({ id }) {
@@ -36,6 +35,10 @@ function PokemonEvolution({ id }) {
     if (error) return <div>Error fetching data: {error}</div>;
     if (!evolutionData) return <div>No evolution data available</div>;
 
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
     const tableContainerStyle = {
         display: 'flex',
         flexDirection: 'column',
@@ -49,8 +52,9 @@ function PokemonEvolution({ id }) {
                 <table style={{ width: "60%" }}>
                     <tbody>
                         <tr>
-                            <td>{nameEvolution}</td>
-                            <td> <img src={evolutionData.sprites.front_default} alt="" /></td>
+                            <td>{capitalize(nameEvolution)}</td>
+                            <td> <img src={evolutionData.sprites.front_default} alt={nameEvolution} /></td>
+                            <td>{evolutionData.id}</td>
                         </tr>
                     </tbody>
                 </table>

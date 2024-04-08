@@ -1,46 +1,43 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #cbceb9;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #dfd2d2;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Tajawal", sans-serif;
 }
 .rock {
-  background-color: rgb(148, 81, 81);
+  background-color: #b57575; /* Slightly desaturated red */
 }
 .ghost {
-  background-color: rgb(247, 247, 247);
+  background-color: #f2f2f2; /* Light gray */
 }
 .electric {
-  background-color: rgb(255, 255, 161);
+  background-color: #fff8b3; /* Pale yellow */
 }
 .bug {
-  background-color: #F6D6A7;
+  background-color: #f9e5cd; /* Light peach */
 }
 .poison {
-  background-color: #e0a7f6;
+  background-color: #dcb8ed; /* Lavender */
 }
 .normal {
-  background-color: #F4F4F4;
+  background-color: #eaeaea; /* Light gray */
 }
 .fairy {
-  background-color: rgba(255, 192, 203, 0.863);
+  background-color: #ffb3d9; /* Light pink */
 }
 .fire {
-  background-color: #FBE3DF;
+  background-color: #ffdbd6; /* Light salmon */
 }
 .grass {
-  background-color:#e2f9e1b8;
+  background-color: #c6ebd4; /* Pastel green */
 }
 .water {
-  background-color:#E0F1FD;
+  background-color: #c4e5f6; /* Sky blue */
 }
 
 .app-contaner {
