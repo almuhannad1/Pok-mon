@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <h1>Pokémon</h1>
+    <h1 style={{color: "#444"}}>Pokémon</h1>
   )
 }
 
